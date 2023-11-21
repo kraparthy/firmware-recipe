@@ -11,6 +11,7 @@ PACKAGE_INSTALL:qcom-armv8a = " \
     packagegroup-firmware-rb2 \
     packagegroup-firmware-rb5 \
     ${@bb.utils.contains('DISTRO_FEATURES', 'wifi', 'wireless-regdb-static', '', d)} \
+    packagegroup-firmware-rb3g2 \
 "
 
 BAD_RECOMMENDATIONS = " \
